@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mallikarjuna Reddy | Software Engineer</title>
+  <meta name="description" content="Full Stack Developer & AWS Cloud Enthusiast based in Bengaluru, India." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Icons (Lucide via CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── Loader ─────────────────────────────────────── -->
+<div id="loader">
+  <div class="loader-logo">MR.</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- ── Cursor ─────────────────────────────────────── -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- ── Navbar ─────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">MR.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-icon">☀️</span>
+      </button>
+      <div class="hamburger" id="hamburger" role="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────── -->
+<section id="hero">
+  <canvas id="hero-canvas" class="hero-canvas"></canvas>
+  <div class="hero-inner">
+    <!-- Left: Text -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        Mallikarjuna<br /><span>Reddy</span>
+      </h1>
+      <p class="hero-role">
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        Aspiring Software Engineer passionate about building efficient, scalable, 
+        and user-centric applications. AWS certified with hands-on experience 
+        in Full Stack development.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          View Projects &rarr;
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Photo -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring">
+        <img
+          src="https://i.postimg.cc/sxCk9S0R/malli-photo.jpg" alt="Mallikarjuna Reddy"
+          class="hero-photo"
+          loading="eager"
+        />
+        <div class="hero-float-badge">
+          <span class="badge-icon">☁️</span> AWS Certified
+        </div>
+        <div class="hero-float-badge">
+          <span class="badge-icon">💻</span> Full Stack Dev
+        </div>
+        <div class="hero-float-badge">
+          <span class="badge-icon">🔗</span> Blockchain
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ── About ───────────────────────────────────────── -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <!-- Bio -->
+      <div class="about-text reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Building things that matter</h2>
+        <p>I'm a Computer Science graduate from Sathyabama Institute of Science and Technology with a CGPA of 8.22. I specialize in Full Stack development and AWS Cloud solutions, with a passion for building secure, scalable applications.</p>
+        <p>From developing blockchain-based voting systems to designing private AWS cloud architectures, I love tackling complex problems with clean engineering. I adapt quickly to new technologies and thrive in collaborative environments.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8.22</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">AWS Certs</span>
+          </div>
+        </div>
+        <a href="https://drive.google.com/file/d/1zNihguHLJOMFT1M6bJHRWR3m6Lx5k5aj/view?usp=drive_link" download class="btn btn-outline">
+  ⬇ Visit my Resume
+</a>
+      </div>
+
+      <!-- Skills -->
+      <div class="reveal reveal-delay-1">
+        <p class="section-label">Skills</p>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Java</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Python</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Node.js</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">AWS Cloud</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">SQL</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">HTML / CSS</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">C++</span><span class="skill-pct">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+          </div>
+        </div>
+
+        <div class="tech-pills" style="margin-top:28px">
+          <span class="tech-pill">GitHub</span>
+          <span class="tech-pill">VS Code</span>
+          <span class="tech-pill">AWS EC2</span>
+          <span class="tech-pill">AWS S3</span>
+          <span class="tech-pill">VPC</span>
+          <span class="tech-pill">SQL Server</span>
+          <span class="tech-pill">Blockchain</span>
+          <span class="tech-pill">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Projects ────────────────────────────────────── -->
+<section id="projects">
+  <div class="section-inner">
+    <p class="section-label reveal">Projects</p>
+    <h2 class="section-title reveal">Things I've built</h2>
+    <p class="reveal" style="color:var(--muted);max-width:500px;margin-bottom:0;font-size:0.95rem">
+      Click on any project card to explore the full details, tech stack, and highlights.
+    </p>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card reveal reveal-delay-1" data-project="blockchain" role="button" tabindex="0">
+        <div class="project-card-inner">
+          <div class="project-icon">🔗</div>
+          <div class="project-title">Blockchain-Based Secure Voting System</div>
+          <p class="project-desc">
+            A tamper-proof digital voting platform using cryptographic hashing for vote integrity, 
+            authentication systems to prevent duplicate votes, and transparent audit trails.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Blockchain</span>
+            <span class="project-tag">Cryptography</span>
+            <span class="project-tag">SHA-256</span>
+          </div>
+          <span class="project-link">View Details →</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal reveal-delay-2" data-project="aws" role="button" tabindex="0">
+        <div class="project-card-inner">
+          <div class="project-icon">☁️</div>
+          <div class="project-title">AWS Secure S3 Access via VPC Endpoints</div>
+          <p class="project-desc">
+            Architected a private AWS cloud solution enabling secure S3 access through VPC endpoints, 
+            eliminating public internet exposure with full IAM policy enforcement.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">AWS EC2</span>
+            <span class="project-tag">VPC</span>
+            <span class="project-tag">S3</span>
+            <span class="project-tag">IAM</span>
+          </div>
+          <span class="project-link">View Details →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Project Modal ───────────────────────────────── -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- ── Experience ──────────────────────────────────── -->
+<section id="experience">
+  <div class="section-inner">
+    <p class="section-label reveal">Experience</p>
+    <h2 class="section-title reveal">My Journey</h2>
+
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot">💼</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Full Stack Developer Intern</div>
+            <span class="timeline-date">Mar 2024 – Jun 2024</span>
+          </div>
+          <div class="timeline-company">ASK Technologies</div>
+          <ul>
+            <li>Developed and integrated frontend and backend components for web applications, ensuring smooth end-to-end data flow</li>
+            <li>Built secure authentication systems with robust input validation and session management</li>
+            <li>Optimized frontend performance by improving UI responsiveness and reducing load times</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot">🌐</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Web Development Intern</div>
+            <span class="timeline-date">Jun 2023 – Jul 2023</span>
+          </div>
+          <div class="timeline-company">Academor</div>
+          <ul>
+            <li>Created static and responsive web pages using HTML, CSS, and JavaScript with strong focus on layout principles</li>
+            <li>Implemented structured layouts ensuring consistency and cross-device compatibility</li>
+            <li>Applied core frontend concepts to improve usability and visual design of web interfaces</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item 3: Education -->
+      <div class="timeline-item">
+        <div class="timeline-dot">🎓</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">B.Tech – Computer Science & Engineering</div>
+            <span class="timeline-date">2020 – 2024</span>
+          </div>
+          <div class="timeline-company">Sathyabama Institute of Science and Technology</div>
+          <ul>
+            <li>Graduated with CGPA 8.22 with specialization in software engineering and cloud technologies</li>
+            <li>Completed projects in Blockchain and AWS cloud security architecture</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Certifications ──────────────────────────────── -->
+<section id="certifications">
+  <div class="section-inner">
+    <p class="section-label reveal">Certifications</p>
+    <h2 class="section-title reveal">Credentials</h2>
+    <div class="certs-grid">
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-icon">☁️</div>
+        <div>
+          <div class="cert-title">AWS Cloud – Star Certification</div>
+          <div class="cert-issuer">Amazon Web Services</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-icon">🔐</div>
+        <div>
+          <div class="cert-title">AWS Cloud – QIRMS</div>
+          <div class="cert-issuer">Amazon Web Services</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ─────────────────────────────────────── -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label reveal">Contact</p>
+    <h2 class="section-title reveal">Let's connect</h2>
+    <p class="reveal" style="color:var(--muted);max-width:480px;margin-bottom:0;font-size:0.95rem">
+      Open to full-time roles, internships, and collaborations. Drop me a message!
+    </p>
+
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="reveal">
+        <div class="contact-info-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info-text">
+            <small>Email</small>
+            <span>chittepumallikarjunareddy@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-info-text">
+            <small>Phone</small>
+            <span>+91 9347350386</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info-text">
+            <small>Location</small>
+            <span>Bengaluru, Karnataka, India</span>
+          </div>
+        </div>
+
+        <div class="socials">
+          <a href="https://linkedin.com/in/mallikarjunareddy-c" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Mallikarjuna149" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="mailto:chittepumallikarjunareddy@gmail.com" class="social-btn" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="tel:+919347350386" class="social-btn" title="Phone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.12 6.12l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal reveal-delay-1">
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <div class="form-success" id="form-success">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+            Send Message ✉️
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────── -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">MR.</div>
+    <p class="footer-text">
+      Built with <span>♥</span> by Mallikarjuna Reddy &bull; &copy; 2024
+    </p>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="https://linkedin.com/in/mallikarjunareddy-c" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Mallikarjuna149" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Back to Top ─────────────────────────────────── -->
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
